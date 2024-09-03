@@ -1,34 +1,22 @@
 @import '../styles/variables';
 
 .header {
-    background-color: $primary-color;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-  
-    .navbar {
-      display: flex;
-      justify-content: center;
-  
-      ul {
-        display: flex;
-        list-style: none;
-  
-        li {
-          margin: 0 15px;
-  
-          a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-  
-            &:hover {
-              color: $secondary-color;
-            }
-          }
-        }
+  background-color: white;
+
+  .navbar {
+    display: flex;
+    padding: 10px 0 10px 0;
+    justify-content: flex-end;
+
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0 15px;
+
+      &:hover {
+        font-weight: bold;
       }
     }
   }
-  
+}

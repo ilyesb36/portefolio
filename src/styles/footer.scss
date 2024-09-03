@@ -1,9 +1,15 @@
 @import '../styles/variables';
 
 .footer {
-    background-color: $primary-color;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+  background-color: #333;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+  width: 100%;
+  p{
+    color: white;
+    font-size: 12px;
+    text-align: left;
+  }
   }
   
