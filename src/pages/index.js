@@ -1,23 +1,28 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TextCard from "../components/TextCard";
 import { useState } from "react";
 
 const HomePage = () => {
-
   return (
     <div className="homepage">
       <Header />
+      <h1 className="main-title">
+        Portfolio<p>Ilyès Boulkrinat</p>
+      </h1>
 
-      <section className="main-content">
-        <h1>Portfolio<p>Ilyès Boulkrinat</p></h1>
-        <div className="content">
-          <div className="description">
-            <div />
-          </div>
-          <img src="https://images-dump-ilyes.s3.eu-north-1.amazonaws.com/cat.gif" />
-        </div>
-      </section>
-
+      <TextCard
+        title="Mes projets"
+        text="Voici la brève description de mes projets. Vous pouvez cliquer sur les images pour voir les détails."
+        positionImg="left"
+        imgUrl="https://images-dump-ilyes.s3.eu-north-1.amazonaws.com/cat.gif"
+      />
+      <TextCard
+        title="Mon blog"
+        text="Voici mon blog où je partage mes idées et ressentis sur mon parcours."
+        positionImg="left"
+        imgUrl="https://images-dump-ilyes.s3.eu-north-1.amazonaws.com/cat.gif"
+      />
       <Footer />
     </div>
   );
