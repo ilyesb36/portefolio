@@ -1,0 +1,16 @@
+@import '../styles/variables';
+
+.hero {
+  background-color: $marron-clair;
+  color: $texte-principal;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}

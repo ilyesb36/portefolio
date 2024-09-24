@@ -1,34 +1,35 @@
 @import '../styles/variables';
 
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $secondary-color;
+.text-card {
+  background-color: $marron-clair;
+  border: 1px solid $marron-fonce;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
     width: 100%;
-    padding: 20px 0 20px 0;
+    height: auto;
+    border-radius: 8px;
+  }
 
-    .content {
-        display: inline-block;
-        text-align: center;
-        width: 20%;
+  .text-content {
+    margin-top: 15px;
 
-        .description-title {
-            color: $secondary-color;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .description-text {
-            cursor: pointer;
-        }
-
+    h3 {
+      color: $marron-fonce;
+      font-size: 1.5rem;
     }
 
-    img {
-        margin-left: 10px;
-        cursor: pointer;
-        width: 30%;
+    p {
+      color: $texte-secondaire;
+      font-size: 1rem;
     }
-
+  }
 }

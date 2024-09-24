@@ -1,20 +1,7 @@
 @import '../styles/variables';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+CJK+JP:wght@400;700&display=swap');
 
-$primary-color: #2c3e50;
-$secondary-color: #8e44ad;
-$font-stack: 'Noto Sans CJK JP', sans-serif;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: $font-stack;
-  color: $primary-color;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+.main-container {
+  padding: $padding-general;
+  background-color: $beige;
+  min-height: 100vh;
 }

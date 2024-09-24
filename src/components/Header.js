@@ -1,12 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 const Header = () => {
   return (
     <header className="header">
       <nav className="navbar">
-          <p><a href="/">Accueil</a></p>
-          <p><a href="/">Mes projets</a></p>
-          <p><a href="/">À propos</a></p>
+        <a href="/">Accueil</a>
+        <a href="/projects">Mes projets</a>
+        <a href="/about">À propos</a>
+        <a href="/contact">Contact</a>
       </nav>
     </header>
   );

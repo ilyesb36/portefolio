@@ -1,16 +1,13 @@
-const TextCard = ({imgUrl, positionImg, title, text}) => {
-    console.log(positionImg)
+import React from 'react';
+
+const TextCard = ({ imgUrl, title, text }) => {
   return (
-    <div className="main-container">
-      <div className="content">
-        <div className="description-title">
-          {title}
-        </div>
-        <div className="description-text">
-            {text}
-        </div>
-        </div>
-        <img src={imgUrl} />
+    <div className="text-card">
+      <img src={imgUrl} alt={title} />
+      <div className="text-content">
+        <h3>{title}</h3>
+        <p>{text}</p>
+      </div>
     </div>
   );
 };

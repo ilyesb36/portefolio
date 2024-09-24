@@ -1,30 +1,27 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import TextCard from "../components/TextCard";
-import { useState } from "react";
+import React from 'react';
+import HeroSection from '../components/HeroSection';
+import TextCard from '../components/TextCard';
 
 const HomePage = () => {
   return (
-    <div className="homepage">
-      <Header />
-      <h1 className="main-title">
-        Portfolio<p>Ilyès Boulkrinat</p>
-      </h1>
-
-      <TextCard
-        title="Mes projets"
-        text="Voici la brève description de mes projets. Vous pouvez cliquer sur les images pour voir les détails."
-        positionImg="left"
-        imgUrl="https://images-dump-ilyes.s3.eu-north-1.amazonaws.com/cat.gif"
-      />
-      <TextCard
-        title="Mon blog"
-        text="Voici mon blog où je partage mes idées et ressentis sur mon parcours."
-        positionImg="left"
-        imgUrl="https://images-dump-ilyes.s3.eu-north-1.amazonaws.com/cat.gif"
-      />
-      <Footer />
-    </div>
+    <main className="home-page">
+      <HeroSection />
+      <section className="projects-section">
+        <h2>Mes Projets</h2>
+        <div className="projects-container">
+          <TextCard
+            title="Projet 1"
+            text="Description du projet 1"
+            imgUrl="https://images-dump-ilyes.s3.eu-north-1.amazonaws.com/cat.gif"
+          />
+          <TextCard
+            title="Projet 2"
+            text="Description du projet 2"
+            imgUrl="https://images-dump-ilyes.s3.eu-north-1.amazonaws.com/cat.gif"
+          />
+        </div>
+      </section>
+    </main>
   );
 };
 

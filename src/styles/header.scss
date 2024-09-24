@@ -1,22 +1,17 @@
 @import '../styles/variables';
 
 .header {
-  background-color: white;
+  background-color: $beige;
+  padding: $padding-general;
+}
 
-  .navbar {
-    display: flex;
-    padding: 10px 0 10px 0;
-    justify-content: flex-end;
+.navbar a {
+  color: $marron-fonce;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    a {
-      color: $secondary-color;
-      text-decoration: none;
-      font-size: 16px;
-      margin: 0 15px;
-
-      &:hover {
-        font-weight: bold;
-      }
-    }
-  }
+.navbar a:hover {
+  color: $marron-clair;
 }
